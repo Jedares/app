@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h2>Kots</h2>
+<ul class="kots">
+  <li *ngFor="let kot of kots"
+    [class.selected]="kot === selectedKot"
+    (click)="onSelect(kot)">
+    <span class="badge">{{kot.race}}</span> {{kot.name}}
+  </li>
+</ul>
+ 
+
